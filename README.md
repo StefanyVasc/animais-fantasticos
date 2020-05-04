@@ -1,6 +1,6 @@
 # Animais Fantásticos :wolf:
  
-  --   :construction: [Em construção] :construction:
+:construction: [Em construção] :construction:
 
 ## :arrow_forward: Site produzido durante as aulas do curso da [Origamid](https://www.origamid.com/) sobre JavaScript Completo ES6+. 
 
