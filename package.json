@@ -1,0 +1,42 @@
+{
+  "name": "animais-fantasticos",
+  "version": "1.0.0",
+  "description": ":construction: [Em construção] :construction:",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefanyVasc/animais-fantasticos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StefanyVasc/animais-fantasticos/issues"
+  },
+  "homepage": "https://github.com/StefanyVasc/animais-fantasticos#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.0",
+    "eslint": "^7.12.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "mini-css-extract-plugin": "^1.2.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.3.1",
+    "webpack-cli": "^4.1.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "whatwg-fetch": "^3.4.1"
+  }
+}
