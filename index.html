@@ -5,250 +5,304 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Animais Fantásticos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script>
-      document.documentElement.className = " js";
-    </script>
     <link
       href="https://fonts.googleapis.com/css?family=Playfair+Display+SC"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script>
+      document.documentElement.className += " js";
+    </script>
+    <link rel="stylesheet" type="text/css" href="dist/main.css" />
   </head>
   <body>
-    <nav class="menu js-menu">
-      <ul>
-        <li><a href="#animais">Animais</a></li>
-        <li><a href="#faq">Faq</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="https://www.origamid.com/">Dev →</a></li>
-      </ul>
-    </nav>
-    <section class="grid-section animais js-scroll" id="animais">
-      <h1 class="titulo">Animais Fantásticos</h1>
-      <ul class="animais-lista js-tabmenu">
-        <li>
-          <img src="img/imagem1.jpg" />
-        </li>
-        <li>
-          <img src="img/imagem2.jpg" />
-        </li>
-        <li>
-          <img src="img/imagem3.jpg" />
-        </li>
-        <li>
-          <img src="img/imagem4.jpg" />
-        </li>
-        <li>
-          <img src="img/imagem5.jpg" />
-        </li>
-        <li>
-          <img src="img/imagem6.jpg" />
-        </li>
-      </ul>
-      <div class="animais-descricao js-tabcontent">
-        <section>
-          <h2>Raposa</h2>
-          <p>
-            As raposas são animais mamíferos e onívoros pertencentes à família
-            Canidae. São vulpídeos de porte médio, caracterizados por um focinho
-            comprido e uma cauda longa e peluda.
-          </p>
-          <p>
-            Também apresentam como particularidade suas pupilas ovais,
-            semelhantes às pupilas verticais dos felídeos.
-          </p>
-          <p>
-            De cerca de 40 espécies reconhecidas como raposas, somente 12
-            pertencem ao gênero Vulpes das "raposas verdadeiras", do qual a
-            raposa vermelha é a mais comum.
-          </p>
-          <p>
-            Também apresentam como particularidade suas pupilas ovais,
-            semelhantes às pupilas verticais dos felídeos.
-          </p>
-        </section>
+    <div class="grid-container">
+      <nav class="menu" data-menu="suave">
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
+        <ul data-menu="list" id="menu">
+          <li><a href="#animais">Animais</a></li>
+          <li data-dropdown>
+            <a href="sobre.html">Sobre</a>
+            <ul class="dropdown-menu">
+              <li><a href="empresa.html">A Empresa</a></li>
+              <li><a href="equipe.html">Equipe</a></li>
+              <li><a href="socios.html">Sócios</a></li>
+              <li><a href="investidores.html">Investidores</a></li>
+            </ul>
+          </li>
+          <li><a href="#faq">Faq</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a data-modal="abrir" href="login.html">Developer →</a></li>
+        </ul>
+      </nav>
+      <section class="grid-section animais" data-anime="scroll" id="animais">
+        <h1 class="titulo">Animais Fantásticos</h1>
+        <ul class="animais-lista" data-tab="menu">
+          <li>
+            <img src="img/imagem1.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem2.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem3.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem4.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem5.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem6.jpg" />
+          </li>
+        </ul>
+        <div class="animais-descricao" data-tab="content">
+          <section data-anime="show-right">
+            <h2>Raposa</h2>
+            <p>
+              As raposas são animais mamíferos e onívoros pertencentes à família
+              Canidae. São vulpídeos de porte médio, caracterizados por um
+              focinho comprido e uma cauda longa e peluda.
+            </p>
+            <p>
+              Também apresentam como particularidade suas pupilas ovais,
+              semelhantes às pupilas verticais dos felídeos.
+            </p>
+            <p>
+              De cerca de 40 espécies reconhecidas como raposas, somente 12
+              pertencem ao gênero Vulpes das "raposas verdadeiras", do qual a
+              raposa vermelha é a mais comum.
+            </p>
+            <p>
+              Também apresentam como particularidade suas pupilas ovais,
+              semelhantes às pupilas verticais dos felídeos.
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Esquilo</h2>
+            <p>
+              Os esquilos são roedores que têm a cauda longa e peluda. Em
+              cidades de várias partes do mundo, são vistos com mais frequência
+              do que qualquer outro mamífero silvestre ou selvagem.
+            </p>
+            <p>
+              Os esquilos fazem parte da família dos ciurídeos, que também
+              inclui a marmota, o cão-da-pradaria e a tâmia. Mais de 250 animais
+              diferentes integram essa família.
+            </p>
+            <p>
+              Os esquilos vivem em todos os continentes, exceto na Antártica e
+              na Oceania. Esquilos arborícolas fazem suas casas nas árvores.
+              Esquilos do solo vivem em buracos sob as pradarias, nos desertos e
+              nos campos.
+            </p>
+            <p>
+              Os esquilos são famosos pela agilidade; seus movimentos são
+              rápidos. Eles podem dar grandes saltos entre ramas. Os
+              esquilos-voadores conseguem planar, porque suas patas têm
+              membranas que os ajudam como se fossem asas.
+            </p>
+          </section>
+          <section data-anime="show-down">
+            <h2>Urso</h2>
+            <p>
+              O urso é um mamífero grande e forte, parente do cachorro e do
+              guaxinim. Os maiores animais do mundo que vivem em terra e comem
+              carne são as maiores espécies de ursos.
+            </p>
+            <p>
+              Existem várias espécies: o urso-polar, o urso-pardo, o urso-negro,
+              o urso-negro-asiático, o urso-malaio, o urso-de-óculos e o
+              urso-beiçudo. O urso-pardo é chamado de urso-cinzento na América
+              do Norte. Muitos cientistas consideram o panda um membro da
+              família dos ursos.
+            </p>
+            <p>
+              Os ursos podem medir de 1 a 3 metros de altura. O urso-malaio é a
+              menor espécie e o urso-pardo do Alasca, chamado de Kodiak, é a
+              maior. Ele pode pesar 780 quilos. Alguns ursos-polares podem
+              chegar bem perto disso.
+            </p>
+            <p>
+              No outono, os ursos comem muito para armazenar gordura. Depois,
+              dormem durante quase todo o inverno, em um estado de descanso
+              profundo parecido com a hibernação.
+            </p>
+          </section>
+          <section data-anime="show-down">
+            <h2>Lobo</h2>
+            <p>
+              Os lobos pertencem à mesma família dos cães. São conhecidos por
+              sua inteligência e coragem, e também por serem capazes de viajar
+              grandes distâncias. Esses animais estão relacionados ao folclore e
+              às tradições de diversos povos e culturas.
+            </p>
+            <p>
+              Existem três espécies, ou tipos, de lobos. O mais conhecido é o
+              lobo-cinzento, que vive na América do Norte, na Europa e na Ásia.
+            </p>
+            <p>
+              O lobo-cinzento tem pernas longas e grandes pés. Os machos são
+              maiores do que as fêmeas. Um lobo-cinzento macho pesa em média 45
+              quilos.
+            </p>
+            <p>
+              O lobo-vermelho pesa de 20 a 37 quilos. Seu pelo é
+              castanho-avermelhado ou cor de areia. O lobo-etíope também possui
+              pelo castanho-avermelhado. O macho dessa espécie pesa apenas 16
+              quilos.
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Macaco</h2>
+            <p>
+              Os macacos são animais inteligentes e sociáveis. São conhecidos
+              por correr e saltar pelas árvores com facilidade. A exemplo dos
+              antropoides (como são chamados os macacos sem rabo) e dos seres
+              humanos, os macacos pertencem ao grupo de mamíferos chamados
+              primatas.
+            </p>
+            <p>
+              Há cerca de duzentas espécies de macacos. Os cientistas os dividem
+              em dois grupos: do Novo Mundo e do Velho Mundo. Entre os macacos
+              do Velho Mundo estão babuínos, mandris, resos, langures e cólobos.
+              Entre os do Novo Mundo, contam-se saguis, bugios, macacos-aranha,
+              macacos-barrigudos e macacos-prego.
+            </p>
+            <p>
+              Em geral, os macacos vivem em árvores nas florestas tropicais e
+              equatoriais. Babuínos e outras espécies costumam viver no chão, em
+              campos ou em áreas rochosas.
+            </p>
+            <p>
+              O tamanho dos macacos varia muito. O sagui-leãozinho mede apenas
+              14 centímetros, sem contar a cauda. Os maiores babuínos podem
+              chegar a 1,15
+            </p>
+          </section>
 
-        <section>
-          <h2>Esquilo</h2>
-          <p>
-            Os esquilos são roedores que têm a cauda longa e peluda. Em cidades
-            de várias partes do mundo, são vistos com mais frequência do que
-            qualquer outro mamífero silvestre ou selvagem.
-          </p>
-          <p>
-            Os esquilos fazem parte da família dos ciurídeos, que também inclui
-            a marmota, o cão-da-pradaria e a tâmia. Mais de 250 animais
-            diferentes integram essa família.
-          </p>
-          <p>
-            Os esquilos vivem em todos os continentes, exceto na Antártica e na
-            Oceania. Esquilos arborícolas fazem suas casas nas árvores. Esquilos
-            do solo vivem em buracos sob as pradarias, nos desertos e nos
-            campos.
-          </p>
-          <p>
-            Os esquilos são famosos pela agilidade; seus movimentos são rápidos.
-            Eles podem dar grandes saltos entre ramas. Os esquilos-voadores
-            conseguem planar, porque suas patas têm membranas que os ajudam como
-            se fossem asas.
-          </p>
-        </section>
-        <section>
-          <h2>Urso</h2>
-          <p>
-            O urso é um mamífero grande e forte, parente do cachorro e do
-            guaxinim. Os maiores animais do mundo que vivem em terra e comem
-            carne são as maiores espécies de ursos.
-          </p>
-          <p>
-            Existem várias espécies: o urso-polar, o urso-pardo, o urso-negro, o
-            urso-negro-asiático, o urso-malaio, o urso-de-óculos e o
-            urso-beiçudo. O urso-pardo é chamado de urso-cinzento na América do
-            Norte. Muitos cientistas consideram o panda um membro da família dos
-            ursos.
-          </p>
-          <p>
-            Os ursos podem medir de 1 a 3 metros de altura. O urso-malaio é a
-            menor espécie e o urso-pardo do Alasca, chamado de Kodiak, é a
-            maior. Ele pode pesar 780 quilos. Alguns ursos-polares podem chegar
-            bem perto disso.
-          </p>
-          <p>
-            No outono, os ursos comem muito para armazenar gordura. Depois,
-            dormem durante quase todo o inverno, em um estado de descanso
-            profundo parecido com a hibernação.
-          </p>
-        </section>
-        <section>
-          <h2>Lobo</h2>
-          <p>
-            Os lobos pertencem à mesma família dos cães. São conhecidos por sua
-            inteligência e coragem, e também por serem capazes de viajar grandes
-            distâncias. Esses animais estão relacionados ao folclore e às
-            tradições de diversos povos e culturas.
-          </p>
-          <p>
-            Existem três espécies, ou tipos, de lobos. O mais conhecido é o
-            lobo-cinzento, que vive na América do Norte, na Europa e na Ásia.
-          </p>
-          <p>
-            O lobo-cinzento tem pernas longas e grandes pés. Os machos são
-            maiores do que as fêmeas. Um lobo-cinzento macho pesa em média 45
-            quilos.
-          </p>
-          <p>
-            O lobo-vermelho pesa de 20 a 37 quilos. Seu pelo é
-            castanho-avermelhado ou cor de areia. O lobo-etíope também possui
-            pelo castanho-avermelhado. O macho dessa espécie pesa apenas 16
-            quilos.
-          </p>
-        </section>
-        <section>
-          <h2>Macaco</h2>
-          <p>
-            Os macacos são animais inteligentes e sociáveis. São conhecidos por
-            correr e saltar pelas árvores com facilidade. A exemplo dos
-            antropoides (como são chamados os macacos sem rabo) e dos seres
-            humanos, os macacos pertencem ao grupo de mamíferos chamados
-            primatas.
-          </p>
-          <p>
-            Há cerca de duzentas espécies de macacos. Os cientistas os dividem
-            em dois grupos: do Novo Mundo e do Velho Mundo. Entre os macacos do
-            Velho Mundo estão babuínos, mandris, resos, langures e cólobos.
-            Entre os do Novo Mundo, contam-se saguis, bugios, macacos-aranha,
-            macacos-barrigudos e macacos-prego.
-          </p>
-          <p>
-            Em geral, os macacos vivem em árvores nas florestas tropicais e
-            equatoriais. Babuínos e outras espécies costumam viver no chão, em
-            campos ou em áreas rochosas.
-          </p>
-          <p>
-            O tamanho dos macacos varia muito. O sagui-leãozinho mede apenas 14
-            centímetros, sem contar a cauda. Os maiores babuínos podem chegar a
-            1,15 metro.
-          </p>
-        </section>
-        <section>
-          <h2>Leão</h2>
-          <p>
-            O leão é o segundo maior membro da família dos felinos, à qual
-            pertencem também o gato e o tigre (o tigre é o maior felino). Ele
-            vive em regiões da África e da Índia, e seu rugido é um dos sons
-            mais assustadores que se ouvem nas savanas. O nome científico do
-            leão é Panthera leo.
-          </p>
-          <p>
-            O pelo dos leões é amarelo-acastanhado. É fácil identificar o leão
-            macho devido à juba, formada por pelos espessos que crescem sobre a
-            cabeça, o pescoço e os ombros. As fêmeas não possuem juba.
-          </p>
-          <p>
-            Os leões vivem em bandos. Cada bando é composto de fêmeas
-            aparentadas, além de seus filhotes e de um ou dois machos adultos.
-            Os bandos têm em média quinze membros.
-          </p>
-          <p>
-            Geralmente são as leoas que se encarregam de caçar para alimentar o
-            bando. A caça acontece sobretudo à noite. Elas capturam animais como
-            zebras, gnus e antílopes. Costumam esconder-se perto de uma fonte de
-            água e então atacar suas presas. Às vezes os bandos caçam juntos e
-            dividem os animais que abatem.
-          </p>
-        </section>
+          <section data-anime="show-right">
+            <h2>Leão</h2>
+            <p>
+              O leão é o segundo maior membro da família dos felinos, à qual
+              pertencem também o gato e o tigre (o tigre é o maior felino). Ele
+              vive em regiões da África e da Índia, e seu rugido é um dos sons
+              mais assustadores que se ouvem nas savanas. O nome científico do
+              leão é Panthera leo.
+            </p>
+            <p>
+              O pelo dos leões é amarelo-acastanhado. É fácil identificar o leão
+              macho devido à juba, formada por pelos espessos que crescem sobre
+              a cabeça, o pescoço e os ombros. As fêmeas não possuem juba.
+            </p>
+            <p>
+              Os leões vivem em bandos. Cada bando é composto de fêmeas
+              aparentadas, além de seus filhotes e de um ou dois machos adultos.
+              Os bandos têm em média quinze membros.
+            </p>
+            <p>
+              Geralmente são as leoas que se encarregam de caçar para alimentar
+              o bando. A caça acontece sobretudo à noite. Elas capturam animais
+              como zebras, gnus e antílopes. Costumam esconder-se perto de uma
+              fonte de água e então atacar suas presas. Às vezes os bandos caçam
+              juntos e dividem os animais que abatem.
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <section class="grid-section faq" data-anime="scroll" id="faq">
+        <h1 class="titulo">FAQ</h1>
+        <dl class="faq-lista" data-anime="accordion">
+          <dt>Por quanto tempo esses animais vão permanecer na terra?</dt>
+          <dd>
+            Bem, isso só depende de nós humanos! Se os respeitarmos e tomarmos
+            como nossa missão a preservação da vida desses animais, certamente
+            eles permanecerão o tanto quanto o homem permanecerá na terra.
+          </dd>
+          <dt>Eles são fantásticos?</dt>
+          <dd>
+            Todos os animais são cheios de particularidades e é isso o que os
+            fazem realmente fantásticos.
+          </dd>
+          <dt>Qual a diferença?</dt>
+          <dd>
+            Cada animal tem suas diferenças físicas e comportamentais, porém
+            todos podem coexistir em uma mesmo lugar.
+          </dd>
+          <dt>Como proteger?</dt>
+          <dd>
+            Mesmo morando em grandes cidades, é possível agir para evitar que os
+            animais entrem em risco de extinção. A qualquer suspeita não hesite
+            em denunciar aos órgãos ambientais.
+          </dd>
+        </dl>
+      </section>
+
+      <section class="grid-section numeros" data-anime="scroll">
+        <h1 class="titulo">Números</h1>
+        <div class="numeros-grid"></div>
+      </section>
+
+      <section class="grid-section contato" data-anime="scroll" id="contato">
+        <h1 class="titulo">Contato</h1>
+        <div
+          class="mapa"
+          data-tooltip
+          aria-label="Endereço próximo ao estacionamento."
+        >
+          <img src="img/mapa.png" />
+        </div>
+        <ul class="dados">
+          <li>contato@origamid.com</li>
+          <li>+55 (21) 9999-9999</li>
+          <li>Rua do Conde, nº 21</li>
+          <li>Rio de Janeiro - RJ</li>
+          <li>Doe <span class="btc-preco">0</span> bitcoin para nos ajudar</li>
+          <li data-semana="1,2,3,4,5" data-horario="8,18">
+            Seg à Sex das 8 às 18h
+          </li>
+        </ul>
+      </section>
+
+      <footer class="copy">
+        <p>Todos os direitos reservados.</p>
+      </footer>
+    </div>
+
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <button data-modal="fechar" class="fechar">X</button>
+        <div>
+          <p>Site criado com ❤️ por Stefany Sá</p>
+
+          <div class="modal-github">
+            <p>Ficou curioso(a)? Veja mais trabalhos aqui:</p>
+            <div>
+              <a href="https://github.com/StefanyVasc" target="_blank"
+                ><img src="/img/github.png"
+              /></a>
+              <a href="https://medium.com/@stefany.vasc.sa" target="_blank"
+                ><img src="/img/medium.png"
+              /></a>
+            </div>
+          </div>
+
+          <p class="start-email">Ou caso prefira</p>
+
+          <button type="submit">
+            <img src="/img/conversation.png" />
+            <a
+              target="_blank"
+              href="mailto:stefany.vasc.sa@gmail.com?subject=Olá%20Stefany"
+              >Entrar em contato</a
+            >
+          </button>
+        </div>
       </div>
     </section>
-
-    <section class="grid-section faq js-scroll" id="faq">
-      <h1 class="titulo">FAQ</h1>
-      <dl class="faq-lista js-accordion">
-        <dt>Por quanto tempo esses animais vão permanecer na terra?</dt>
-        <dd>
-          Bem, isso só depende de nós humanos! Se os respeitarmos e tomarmos
-          como nossa missão a preservação da vida desses animais, certamente
-          eles permanecerão o tanto quanto o homem permanecerá na terra.
-        </dd>
-        <dt>Eles são fantásticos?</dt>
-        <dd>
-          Todos os animais são cheios de particularidades e é isso o que os
-          fazem realmente fantásticos.
-        </dd>
-        <dt>Qual a diferença?</dt>
-        <dd>
-          Cada animail tem suas diferenças fisicas e comportamentais, porém
-          todos podem coexistir em uma mesmo lugar.
-        </dd>
-        <dt>Como proteger?</dt>
-        <dd>
-          Mesmo morando em grandes cidades, é possível agir para evitar que os
-          animais entrem em risco de extinção. A qualquer suspeita não exite em
-          denunciar aos órgãos ambientais ou ao ibama.
-        </dd>
-      </dl>
-    </section>
-
-    <section class="grid-section contato js-scroll" id="contato">
-      <h1 class="titulo">Contato</h1>
-      <div class="mapa">
-        <img src="img/mapa.png" />
-      </div>
-      <ul class="dados">
-        <li>contato@origamid.com</li>
-        <li>+55 (21) 9999-9999</li>
-        <li>Rua do Conde, nº 21</li>
-        <li>Rio de Janeiro - RJ</li>
-      </ul>
-    </section>
-
-    <footer class="copy">
-      <p>Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <script type="module" src="./dist/main.js"></script>
   </body>
 </html>
