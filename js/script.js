@@ -5,7 +5,7 @@ import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 import initFuncionamento from "./modules/funcionamento.js";
 import initMenuMobile from "./modules/menu-mobile.js";
-import initModal from "./modules/modal.js";
+import Modal from "./modules/modal.js";
 import initAnimacaoScroll from "./modules/scroll-animacao.js";
 import ScrollSuave from "./modules/scroll-suave.js";
 import TabNav from "./modules/tabnav.js";
@@ -23,8 +23,14 @@ const tabNav = new TabNav(
 );
 tabNav.init();
 
+const modal = new Modal(
+  '[data-modal="abrir"]',
+  '[data-modal="fechar"]',
+  '[data-modal="container"]'
+);
+modal.init();
+
 initAnimacaoScroll();
-initModal();
 initTooltip();
 initDropdownMenu();
 initMenuMobile();
