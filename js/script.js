@@ -8,6 +8,7 @@ import MenuMobile from "./modules/menu-mobile.js";
 import Modal from "./modules/modal.js";
 import ScrollAnima from "./modules/scroll-anima.js";
 import ScrollSuave from "./modules/scroll-suave.js";
+import SlideNav from "./modules/slide.js";
 import TabNav from "./modules/tabnav.js";
 import Tooltip from "./modules/tooltip.js";
 
@@ -45,8 +46,10 @@ menuMobile.init();
 const funcionamento = new Funcionamento("[data-semana]", "aberto");
 funcionamento.init();
 
-fetchAnimais(
-  "https://github.com/StefanyVasc/animais-fantasticos/blob/master/animaisapi.json",
-  ".numeros-grid"
-);
+fetchAnimais("./animaisapi.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
+
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+slide.addControl(".custom-control");
+/* slide.addControl(); */
